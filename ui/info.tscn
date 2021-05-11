@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://ui/components/resources.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ui/components/life_bar.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ui/info.gd" type="Script" id=3]
+
+[node name="info" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="life_bar" parent="." instance=ExtResource( 2 )]
+
+[node name="resources" parent="." instance=ExtResource( 1 )]
